@@ -1,0 +1,66 @@
+<HTML>	
+ 		
+ 		
+		<HEAD>
+		<TITLE></TITLE>
+		<style type="text/css">
+		body{
+			padding-left:14em;
+		
+			color:black;
+			}
+			
+		ul.navbar{
+			position:absolute;
+			top: 0em;
+			left: 0em;
+			width: 20em}
+		</style>
+		
+		<script type ="text/javascript" src="math.js"> </script> 
+			
+		</HEAD>	
+ 		
+		<BODY>
+		<ul class="navbar">
+		<form name = "the_form">
+		<font face="Georgia" >
+		<p align="center"> Calculation Data</p>
+		
+		<p><u>Spring Constant of Bow <br> </u> <input type = "text" id = "k"> <br>
+		<p><u>Pull Back Distance (m) <br></u> <input type = "text" id = "x"> <br>
+		<p><u>Mass of Arrow (kg) <br></u> <input type = "text" id = "m"> <br>
+		<p><u>Angle between 0 and 90 (Degrees) <br></u> <input type = "text" id = "angle"> <br>
+		<p><u>Height released from (m)<br></u> <input type = "text" id = "height"> <br>
+		
+				
+	
+		<p align="center"> Target Data</p>
+		
+		<p><u>Height of Target (m)<br> </u> <input type = "text" id = "th"> <br>
+		<p><u>Length (m)<br> </u> <input type = "text" id = "l"> <br>
+		<p><u>Horizontal Distance Away(m) <br></u> <input type = "text" id = "td"> <br>
+		
+	
+		<p align="center"> Percent Error Data</p>
+		
+		<p><u>Distance the arrow went (m)</u> <input type = "text" id = "dexp"> <br>
+		<br>
+		
+		 <input type = "button" value = "Calculate" onClick ="calcDh(false, false, false)">
+		 <br>
+		 <input type = "button" value = "Percent Error" onClick ="calcDh(true, false, false)">
+		 <br>
+		 <input type = "button" value = "Hit?" onClick ="calcDh(false, true, false)">
+		
+		
+<!--		<input type = "button" value = "See Classes Added so far" onClick ="showSchedule()">
+		<input type = "button" value = "See Classes Added on Table" onClick ="cycleSchedule()">
+	-->	 
+		</font>
+		 </ul>
+
+		</form>
+		</BODY>
+		
+</HTML>
